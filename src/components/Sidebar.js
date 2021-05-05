@@ -17,7 +17,7 @@ export default function Sidebar({ weather }) {
   let weatherState;
   let weatherStateDesc;
 
-  switch (consolidated_weather.weather_state_abbr) {
+  switch (consolidated_weather[0].weather_state_abbr) {
     case 'sn':
       weatherState = Snow;
       weatherStateDesc = 'Snow';
